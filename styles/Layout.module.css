@@ -1,0 +1,10 @@
+.layout{
+    display: flex;
+    flex-direction: column;
+}
+.layoutContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* height: 100vh; */
+}
