@@ -17,6 +17,7 @@ export default function Home() {
       </Head>
 
       <form className={styles.r} onSubmit>
+        
         <Logo />
 
         <div className={styles.signUp__inputContainer}>
