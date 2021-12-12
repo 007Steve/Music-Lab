@@ -1,122 +1,121 @@
 .container {
+  color: white;
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  background-color: #212121;
+  background-image: linear-gradient(180deg, #212121 0%, #000000 100%);
+}
+.r {
+  /* background-color: rgba(0, 0, 0, 0.959); */
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  /* justify-content: space-around; */
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.signUp__img {
+  height: 85px;
 }
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+.signUp__btnContainer {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.footer img {
-  margin-left: 0.5rem;
+.signUp__imgIcon {
+  height: 30px;
+  margin-right: 0.51rem;
 }
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
+.signUp__btn {
+  border: none;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.205);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  height: 43px;
+  min-width: 46%;
+  color: white;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
+  align-items: center;
+  margin: 0.51rem 0.5rem;
 }
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
+.signUp__btn:hover {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #3a4fe8 100%);
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.signUp__orContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.signUp__orLine {
+  height: 1px;
+  width: 100px;
+  background-color: rgba(187, 187, 187, 0.452);
+  display: inline-block;
 }
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.signUp__orLineTexts {
+  margin: 0.51rem;
 }
+/*  */
+.signUp__inputContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #525252;
+  background-image: linear-gradient(180deg, #525252 0%, #373737 100%);
 
-.logo {
-  height: 1em;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  height: 40px;
+  min-width: 250px;
+  margin: 0.51rem;
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.signUp__input {
+  border: none;
+  background-color: rgba(95, 95, 95, 0);
+  width: 100%;
+  outline: none;
+  color: white;
+  padding: 1rem;
+}
+.signUp__inputIcon {
+  margin: 0.51rem;
+  color: #45d599;
+}
+.signUp__btnSignContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: indianred; */
+  width: 250px;
+}
+.demo__btn {
+  border: none;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.205);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  cursor: pointer;
+  min-height: 43px;
+  min-width: 250px;
+  /* width: 40%; */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.51rem;
+}
+.demo__btn:hover {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #3a4fe8 100%);
 }
