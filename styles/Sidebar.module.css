@@ -1,0 +1,52 @@
+.sidebar {
+  background-color: rgb(0, 0, 0);
+  min-width: 13vw;
+  height: 100vh;
+  color: white;
+  padding: 0.51rem;
+}
+.sidebar__container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  color: white;
+}
+.sidebar__logo {
+  width: 2.8vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.sidebar__myMuisc {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 0.4rem;
+}
+/* ***************************
+Sidebar Cards
+****************************** */
+.sidebar__sidebarCards{
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  margin: 0.5rem;
+  transition: ease 324ms;
+  cursor: pointer;
+}
+.sidebar__sidebarCards:hover{
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #3a4fe8 100%);
+}
+.sidebar__icon {
+  margin-right: 0.51rem;
+}
+/* ***************************
+Media
+****************************** */
+@media only screen and (max-width: 600px) {
+  .sidebar {
+    display:none;
+  }
+}
