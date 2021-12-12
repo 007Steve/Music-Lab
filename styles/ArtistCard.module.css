@@ -1,0 +1,38 @@
+.artistCard {
+  margin: 1rem;
+  text-align: center;
+  border-radius: .31rem;
+  cursor: pointer;
+  transition: ease-in-out 432ms;
+  text-align: left;
+  background-color:#181818 ;
+  padding: 1rem;
+}
+.artistCard:hover{
+    background-color:#2c2b2b ;
+}
+.artistCard__img:hover {
+  background-color: tomato;
+  box-shadow: 0 0 30px rgba(71, 79, 90, 0.39);
+}
+.artistCard__img {
+
+  width: 150px;
+  height: 150px;
+}
+.artistCard__name {
+  margin-top: 1rem;
+}
+.artistCard__song {
+  color: #cccedd81;
+  font-size: 13px;
+}
+
+.artist{
+  border-radius: 30rem;
+  box-shadow: 0 0 30px rgba(3, 3, 3, 0.39);
+}
+.album{
+  border-radius: .30rem;
+  box-shadow: 0 0 30px rgba(3, 3, 3, 0.39);
+}
