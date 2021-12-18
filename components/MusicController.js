@@ -20,16 +20,17 @@ function MusicController() {
         </div>
       </div>
       <div className={styles.musicController__infoCenterContainer}>
-        <div className={styles.musicController__iconContainer}>
+         <div className={styles.musicController__iconContainer}>
           <SkipPreviousIcon className={styles.musicController__icon} />
           <PlayCircleFilledIcon
             fontSize="large"
             className={styles.musicController__icon}
           />
           <SkipNextIcon className={styles.musicController__icon} />
-        </div>
+        </div> 
 
-        <div>
+        <div className={styles.musicController__controller}>
+          <p  className={styles.musicController__time}>2:00</p>
           <input
             className={styles.musicController__input}
             min={0}
@@ -37,6 +38,7 @@ function MusicController() {
             value={50}
             type="range"
           />
+           <p  className={styles.musicController__time}>2:00</p>
         </div>
       </div>
       <div className={styles.musicController__infoRightContainer}>
