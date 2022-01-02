@@ -1,14 +1,14 @@
 import "../styles/globals.css";
-import Sidebar from "../components/Sidebar";
-import Layout from "../components/Layout";
+import { store } from '../redux/store'
+import { Provider } from 'react-redux'
 
 function MyApp({ Component, pageProps }) {
   return (
-    // <Layout>
-  
+    <Provider store={store}>
       <Component {...pageProps} />
-      // </Layout>
+    </Provider>
   );
 }
 
 export default MyApp;
+//add store
