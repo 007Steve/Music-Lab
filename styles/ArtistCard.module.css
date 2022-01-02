@@ -16,7 +16,7 @@
   box-shadow: 0 0 30px rgba(71, 79, 90, 0.39);
 }
 .artistCard__img {
-
+border-radius: 5px;
   width: 150px;
   height: 150px;
 }

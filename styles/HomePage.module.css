@@ -19,6 +19,7 @@
   display: flex;
   align-items: center;
   margin: 2rem 0rem;
+ 
 }
 
 .homePage__img {
@@ -37,6 +38,8 @@
   background-color: #212121;
   background-image: linear-gradient(180deg, #212121 0%, #000000 100%);
   overflow-y: scroll;
+  min-height: 55vh;
+  
 }
 
 .homePage__songsContainer::-webkit-scrollbar {
@@ -46,5 +49,12 @@
 @media only screen and (max-width: 600px) {
   .homePage__title {
     display: none;
+
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .homePage__img {
+    height: 160px;
   }
 }
