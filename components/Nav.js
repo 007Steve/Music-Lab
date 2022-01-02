@@ -3,7 +3,7 @@ import styles from "../styles/Nav.module.css";
 import Link from "next/link";
 import { Avatar } from "@material-ui/core";
 
-function Nav() {
+function Nav({user}) {
   
   return (
     <div className={styles.nav}>
