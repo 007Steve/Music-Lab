@@ -3,21 +3,32 @@ import styles from "../styles/SongCard.module.css";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import { useState } from "react";
-function SongCard() {
+import { useDispatch } from "react-redux";
+import { setCurrentSong } from '../redux/currentSongSlice'
+function SongCard({ song }) {
+
+  // Liked toogle state
   const [liked, setLiked] = useState(true);
   const likeSong = () => {
     setLiked(!liked);
   };
+
+  // Set current song
+  const dispatch = useDispatch()
+  const setActiveSong = () => {
+    dispatch(setCurrentSong( song ))
+  }
+
   return (
-    <div className={styles.songCard}>
+    <div className={styles.songCard} onClick={setActiveSong}>
       <div className={styles.songCard__imgContainer}>
         <img
           className={styles.songCard__img}
-          src="https://media.architecturaldigest.com/photos/5890e88033bd1de9129eab0a/4:3/w_960,h_720,c_limit/Artist-Designed%20Album%20Covers%202.jpg"
+          src={song.cover}
           alt=""
         />
         <ArrowRightIcon />
-        <h5>Ttile</h5>
+        <h5>{song.song}</h5>
       </div>
       {liked ? (
         <FavoriteIcon
@@ -26,12 +37,12 @@ function SongCard() {
           onClick={likeSong}
         />
       ) : (
-        <FavoriteIcon
-          fontSize="small"
-          className={styles.Liked}
-          onClick={likeSong}
-        />
-      )}
+          <FavoriteIcon
+            fontSize="small"
+            className={styles.Liked}
+            onClick={likeSong}
+          />
+        )}
     </div>
   );
 }
