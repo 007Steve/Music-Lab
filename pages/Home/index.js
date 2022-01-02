@@ -23,9 +23,9 @@ function index({ data }) {
           <h1 className={styles.homePage__title}>{currentSong.song}</h1>
         </div>
         <div className={styles.homePage__songsContainer}>
-          {/* {data.map((data) => (
+          {data.map((data) => (
             <SongCard song={data} key={data.id} />
-          ))} */}
+          ))}
         </div>
       </div>
       <MusicController />
