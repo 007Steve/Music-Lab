@@ -23,9 +23,9 @@ function index({ data }) {
           <h1 className={styles.homePage__title}>{currentSong.song}</h1>
         </div>
         <div className={styles.homePage__songsContainer}>
-          {data.map((data) => (
+          {/* {data.map((data) => (
             <SongCard song={data} key={data.id} />
-          ))}
+          ))} */}
         </div>
       </div>
       <MusicController />
@@ -37,7 +37,7 @@ export default index;
 
 /// fetch data
 export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:3001/api/hello')
+  const res = await fetch('https://music-lab-app.vercel.app/api/hello')
   const data = await res.json()
   return {
     props: { data },

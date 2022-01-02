@@ -12,9 +12,9 @@ function index({ data }) {
         <Nav />
         <h2 className={styles.artist__title}>Artist</h2>
         <div className={styles.artist__container}>
-          {data.map((data) => (
+          {/* {data.map((data) => (
             <ArtistCard song={data} type="artist" />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@ function index({ data }) {
 export default index;
 
 export async function getStaticProps(context) {
-  const res = await fetch('http://localhost:3001/api/hello')
+  const res = await fetch('https://music-lab-app.vercel.app/api/hello')
   const data = await res.json()
   return {
     props: { data },

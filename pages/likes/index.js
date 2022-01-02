@@ -11,10 +11,6 @@ function index() {
         <Nav />
         <h2 className={styles.likePage__title}>Liked Songs</h2>
         <div className={styles.likePage__songsContainer}>
-          <ArtistCard name="album" />
-          <ArtistCard name="album" />
-          <ArtistCard name="album" />
-          <ArtistCard name="album" />
         </div>
       </div>
     </div>
