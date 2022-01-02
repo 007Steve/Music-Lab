@@ -11,9 +11,9 @@ function index({ data }) {
         <Nav />
         <h2 className={styles.album__title}>Album</h2>
         <div className={styles.album__container}>
-          {/* {data.map((data) => (
+          {data.map((data) => (
             <ArtistCard song={data} type="album" />
-          ))} */}
+          ))}
         </div>
       </div>
     </div>
